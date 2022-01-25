@@ -1,0 +1,142 @@
+/* Colores de la pagina web*/
+:root{
+    --background-bg-color: #1d1d1d;
+    --menu-bg-color: black;
+    --link-bg-color: white;
+    --title-bg-color: #2196f3;
+    --text-bg-color: cornsilk;
+    --shadow-bg-color:#fff;
+}
+
+/* Estilo global para el cuerpo de la pagina*/
+body{
+    background-color: var(--background-bg-color);
+    padding:1px;
+    /*imagen de fondo de la pagina*/
+    background-image: url(../img/backgroundbody.jpg);
+}
+
+/*Caracteristicas Visuales para dispositivos de 200px a 320px de ancho*/
+@media only screen and (min-width:200px) and (max-width:320px){
+    /*Logo y nombre*/
+    header{
+        position: fixed;
+        margin:0;
+        width: 9vh;
+        height: 100vh;
+        min-height: 20vh;
+        background-color: var(--menu-bg-color);
+        color:var(--link-bg-color);
+    }
+    header .hero{
+        width:8.5vh;
+        margin: auto;
+        padding-top: 20px;
+    }
+    header .img_hero{
+        width:8.5vh;
+        display: flex;
+        margin-bottom: 20px;
+        margin-top: 5px;
+    }
+    header .img_hero a{
+        width: 8vh;
+        margin: auto;
+    }
+    header .img_hero img{
+        border-radius: 50%;
+        border: var(--title-bg-color) solid 1px;
+        width: 8vh;
+        height: 8vh;
+    }
+    header .title_hero a{
+        text-decoration: none;
+        color:var(--title-bg-color);
+    }
+    #Name{
+        font-size: 15px;
+        text-align: center;
+        border-bottom: 1px solid var(--title-bg-color);
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-bottom: 5px;
+    }
+    /*Menu de opciones y direcciones*/
+    header .main_menu{
+        height: 75%;
+        display: block;
+    }
+    header #menu{
+        height: 100%;
+    }
+    header .menu{
+        padding-left: 0px;
+        width: 8vh;
+        margin: auto;
+        font-size: 0.8em;
+    }
+    header #content{
+        height: 70%;
+        padding-top: 20px;
+    }
+    header #download{
+        height: 30%;
+        border-top: 1px solid var(--title-bg-color);
+    }
+    header .menu li{
+        list-style: none;
+        margin-top: 5px;
+    }
+    header .menu li a{
+        text-decoration: none;
+        color: var(--link-bg-color);
+        display: grid;
+        justify-content: center;
+    }
+    .material-icons.outlined{
+        margin: auto;
+    }
+    /*Caracteristicas visuales del contenido*/
+    #body{
+        color:var(--text-bg-color);
+        margin-left: 20%;
+    }
+    #body .filling{
+        width: 10vh;
+        max-width: 12vh;
+        min-width: 10vh;
+    }
+    #body_content{
+        margin: 10px;
+        padding-left: 25px;
+        background-color: var(--background-bg-color);
+        box-shadow: 0 0 20px var(--shadow-bg-color);
+    }
+    #body_content .body_img{
+        height: 60%;
+        width: 100%;
+    }
+    /*Caracteristicas visuales del pie de pagina*/
+    footer{
+        margin-left: 20%;
+        color:var(--text-bg-color);
+    }
+    #footer{
+        background-color: var(--background-bg-color);
+        margin: 10px 10px 0px 10px;
+        padding: 15px 30px 30px 30px;
+        box-shadow: var(--shadow-bg-color);
+    }
+    #footer h6{
+        text-align: center;
+        font-size: 0.8em;
+    }
+    #footer p{
+        justify-content: center;
+        text-align: center;
+    }
+    #footer p a{
+        text-decoration: none;
+        color:var(--link-bg-color);
+    }
+}
